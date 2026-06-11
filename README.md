@@ -109,7 +109,7 @@ Multilingual AI support agent using RAG pipelines over historical support data. 
 | 🥈 | **LinuxWorld Hackathon** — 2nd Place |
 | 🌐 | World's first cloud-native standalone **5G Open RAN network** @ Boost Mobile |
 | 🎓 | MS CS @ IIT Chicago — **4.0 GPA** |
-| ☁️ | Incoming **Cloud Engineer Intern @ Nokia** |
+| ☁️ | **Cloud Engineer Intern @ Nokia** |
 
 ---
 
