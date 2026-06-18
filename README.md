@@ -73,7 +73,7 @@ RAG + OCR pipeline that parses insurance cards, checks eligibility, and finds ne
 Autonomous multi-agent system using GPT-4o and LangChain with a planner → coder → debugger → reviewer loop. Self-correcting Docker execution environment with FAISS vector memory for long-context reasoning across large codebases.
 `GPT-4o` `LangChain` `FAISS` `Python` `Docker` `Assistants API`
 
-### ☁️ Cloud Cost Intelligence — Multi-Cloud FinOps Platform
+### ☁️ [Cloud Cost Intelligence](https://github.com/pprenapurkar/cloud_cost_tracker) — Multi-Cloud FinOps Platform
 Python-based analytics pipeline to ingest, normalize, and detect cost anomalies across AWS, GCP, and Azure. Grafana dashboards with proactive alerting for cost regressions.
 `Python` `AWS` `GCP` `Azure` `Pandas` `Grafana`
 
