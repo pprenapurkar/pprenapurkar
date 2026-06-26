@@ -65,25 +65,45 @@ I'm an AI & Backend Engineer with **3 years of industry experience** building sy
 
 ## 📌 Featured Projects
 
-### 🏥 [CareFinder](https://github.com/pprenapurkar/CareLink) — AI-Powered In-Network Healthcare Search
-RAG + OCR pipeline that parses insurance cards, checks eligibility, and finds nearby in-network providers using geospatial search. Deployed on AWS + Kubernetes + Terraform.
-`React` `Node.js` `RAG` `OCR` `PostgreSQL/PostGIS` `AWS` `Kubernetes` `Terraform`
+### 🧬 [RWE-Gen](https://github.com/pprenapurkar/rwe-gen) — Guardrailed LLM Pipeline for Clinical Research
+Turns plain-English clinical questions into structured OMOP observational analyses — engineered for a domain where hallucinations are unacceptable. Architecturally enforced golden rule: the LLM writes only the protocol, PostgreSQL produces every number. Two-stage generation, schema validation with auto-retry, a critic model, and human-in-the-loop locks.
+`FastAPI` `React` `PostgreSQL` `Llama 3.1 70B` `OHDSI ATHENA` `OMOP`
+
+### ☸️ [Service Health Operator](https://github.com/pprenapurkar/Service-operator) — Self-Healing Kubernetes Operator
+A custom Kubernetes operator (Python + kopf) that gives a cluster metric-aware self-healing it doesn't have out of the box. A 3-line `ServiceGuard` CRD drives a level-triggered reconcile loop that scales on Prometheus CPU, restarts crash-loops, GCs dead pods, and *surfaces* preventable issues rather than silently fixing them — freezing when metrics go blind.
+`Python` `kopf` `Kubernetes` `Prometheus` `Operators` `CRD`
 
 ### 🤖 Agentic Code Intelligence — Multi-Agent AI Engineer
 Autonomous multi-agent system using GPT-4o and LangChain with a planner → coder → debugger → reviewer loop. Self-correcting Docker execution environment with FAISS vector memory for long-context reasoning across large codebases.
 `GPT-4o` `LangChain` `FAISS` `Python` `Docker` `Assistants API`
 
 ### ☁️ [Cloud Cost Intelligence](https://github.com/pprenapurkar/cloud_cost_tracker) — Multi-Cloud FinOps Platform
-Python-based analytics pipeline to ingest, normalize, and detect cost anomalies across AWS, GCP, and Azure. Grafana dashboards with proactive alerting for cost regressions.
+Python analytics pipeline that ingests, normalizes, and detects cost anomalies across AWS, GCP, and Azure using rolling-IQR detection. Grafana dashboards with proactive alerting for cost regressions.
 `Python` `AWS` `GCP` `Azure` `Pandas` `Grafana`
 
-### 💬 [Scalable Chat Backend](https://github.com/pprenapurkar) — Event-Driven Distributed System
+### 🏥 [PatientPulse](https://github.com/pprenapurkar/Patientpulse) — Multi-Agent Clinical Decision Support
+🥈 **2nd Place, ScarletHacks 2026 (Healthcare Track).** A multi-agent AI platform that builds a "living clinical profile," bridging episodic hospital visits with continuous wearable monitoring via FHIR R4. Specialized Claude Sonnet 4 agents handle diagnostics, treatment simulation, and proactive anomaly detection before issues become emergencies.
+`Claude Sonnet 4` `Multi-Agent` `FHIR R4` `FastAPI` `React` `Wearables`
+
+### 🩺 [CareFinder](https://github.com/pprenapurkar/care-finder-project) — AI-Powered In-Network Healthcare Search
+RAG + OCR pipeline that parses insurance cards in-browser, checks eligibility, and finds nearby in-network providers via geospatial search — with plain-English coverage Q&A cited to the exact plan page. Built on a fully free stack.
+`Next.js` `Fastify` `RAG` `OCR` `pgvector` `PostGIS` `Supabase`
+
+### 🎯 [Intake](https://github.com/pprenapurkar/Intake-kestra) — AI Job-Search Assistant, Orchestrated by Kestra
+Three scheduled Kestra flows automate the entire operational layer of a job search: a morning digest scores fresh Adzuna postings with Claude, an evening flow drafts follow-ups for overdue applications, and a weekly flow runs Claude analytics with a human-review pause. Everything lands on Telegram — nothing to babysit.
+`Kestra` `Claude` `Python` `Adzuna API` `Telegram` `Orchestration`
+
+### 💬 Scalable Chat Backend — Event-Driven Distributed System
 Fault-tolerant real-time chat platform using Kafka, Redis, and MongoDB. ELK Stack for anomaly detection, deployed on Kubernetes.
 `Kafka` `Redis` `MongoDB` `ELK Stack` `Docker` `Kubernetes`
 
 ### 🧑‍💼 Customer Support AI Agent — RAG + Fine-Tuned NLP
 Multilingual AI support agent using RAG pipelines over historical support data. Fine-tuned domain-specific HuggingFace and NeMo models for contextual response accuracy.
 `LangChain` `HuggingFace` `NeMo` `RAG` `Vector Search`
+
+### 📊 [Query Analytics Workloads](https://github.com/pprenapurkar/Query-analytics) — Spatial ML on 260K Chicago Queries
+A handoff-style team sprint (CSP 571) modeling 260,000 synthetic spatial range/radius queries over Chicago crime data. Owned validation & reporting; the pipeline catches real data anomalies — structural null AVGs, per-file coordinate-scale mismatches, and boundary-effect sampling bias.
+`R` `Spatial Analytics` `EDA` `Modeling` `UCI Dataset`
 
 ---
 
@@ -106,6 +126,7 @@ Multilingual AI support agent using RAG pipelines over historical support data. 
 |---|---|
 | 🥇 | **Smart India Hackathon Winner** — National government-backed hackathon |
 | 🥇 | **IllinoisTech AI-thon Winner** — IIT Chicago AI competition |
+| 🥈 | **ScarletHacks 2026** — 2nd Place, Healthcare Track (PatientPulse) |
 | 🥈 | **LinuxWorld Hackathon** — 2nd Place |
 | 🌐 | World's first cloud-native standalone **5G Open RAN network** @ Boost Mobile |
 | 🎓 | MS CS @ IIT Chicago — **4.0 GPA** |
